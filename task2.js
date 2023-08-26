@@ -85,14 +85,14 @@ else{
 
 //RANDOM
 console.log('====RANDOM====')
-let randomNumber = Math.floor(Math.random() * 5) + 1;
-console.log(randomNumber);
+let randomNum = Math.floor(Math.random() * 5) + 1;
+console.log(randomNum);
 
 // ATAU
 
 function generateRandomNumber(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
-let randomNumber2 = generateRandomNumber(1, 5);
+let randomNum1 = generateRandomNumber(1, 5);
 
-console.log(randomNumber2);
+console.log(randomNum1);
