@@ -8,15 +8,15 @@ console.log("====CONVERSI FAHRENHEIT KE CELCIUS====")
 
 // CURRYING
     console.log('====CONVERSI FAHRENHEIT TO CELCIUS with CURRYING')
+    const x = 1.8
+    const y = 32
     function convertCelsiusToFahrenheitcurrying(celcius){
         return function(x) {
             return function(y){
-                return function(z){
-                    return (celcius * x / y) + z;
+                    return (celcius * x) + y;
                 }
             }
         }
-    }
-
-    let celcius = prompt("celcius")
-    alert(convertCelsiusToFahrenheitcurrying(celcius)(9)(5)(32))
+    alert("WELLCOME TO CELCIUS CONVERTER TO FAHRENHEIT")
+    let celcius = prompt("CELCIUS (ºC)")
+    alert("FAHRENHEIT = " + convertCelsiusToFahrenheitcurrying(celcius)(x)(y) + " ºF")
