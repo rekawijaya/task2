@@ -17,4 +17,6 @@ console.log("====CONVERSI FAHRENHEIT KE CELCIUS====")
             }
         }
     }
-    console.log(convertCelsiusToFahrenheitcurrying(20)(9)(5)(32))
+
+    let celcius = prompt("celcius")
+    alert(convertCelsiusToFahrenheitcurrying(celcius)(9)(5)(32))
